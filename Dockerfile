@@ -17,8 +17,5 @@ RUN pip install pipenv && pipenv install --dev --system --deploy
 COPY wait-for-it.sh wait-for-it.sh 
 RUN chmod +x wait-for-it.sh
 
-ENTRYPOINT [ "/bin/bash", "-c" ]
-CMD ["wait-for-it.sh" , "[ENTER YOUR ENDPOINT HERE]" , "--strict" , "--timeout=300" , "--" , "YOUR REAL START COMMAND"]
-
 # Copy the Django project
 COPY . /code/

@@ -21,6 +21,8 @@ psycopg2-binary = "*"
 daphne = "==3.0.2"
 uwsgi = "*"
 gunicorn = "*"
+django-environ = "*"
+ipython = "*"
 
 [dev-packages]
 
